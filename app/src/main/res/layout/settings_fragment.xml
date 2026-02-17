@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#030617"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            android:textSize="26sp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="Settings" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/home_page_shape"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTAL GOAL HOURS"
+                android:textColor="#2563ea"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/settings_totalGoalHrsEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:autofillHints="0"
+                android:background="@drawable/rounded_input_bg"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8b8992"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DAILY IN"
+                        android:textColor="#2563ea"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/settings_dailyInEditTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="0"
+                        android:background="@drawable/rounded_input_bg"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="0"
+                        android:inputType="text"
+                        android:padding="20dp"
+                        android:textColor="#FFFFFF"
+
+                        android:textColorHint="#8b8992"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DAILY OUT"
+                        android:textColor="#2563ea"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/settings_dailyOutEditTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="0"
+                        android:background="@drawable/rounded_input_bg"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="0"
+                        android:inputType="text"
+                        android:padding="20dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#8b8992"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="WORKING WEEK"
+                android:textColor="#2563ea"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleMonBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:backgroundTint="@null"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Mon"
+                    android:textOn="Mon" />
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleTueBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Tue"
+                    android:textOn="Tue" />
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleWedBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Wed"
+                    android:textOn="Wed" />
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleThuBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Thu"
+                    android:textOn="Thu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleFriBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:text="ToggleButton"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Fri"
+                    android:textOn="Fri" />
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleSatBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:text="ToggleButton"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Sat"
+                    android:textOn="Sat" />
+
+                <ToggleButton
+                    android:id="@+id/settings_toggleSunBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/toggle_button_color"
+                    android:textColor="#FFFFFF"
+                    android:textOff="Sun"
+                    android:textOn="Sun" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/settings_saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/quick_log_button"
+                app:backgroundTint="@null"
+                android:textStyle="bold|italic"
+                android:foreground="?attr/selectableItemBackground"
+                android:textSize="26dp"
+                android:padding="16dp"
+                android:text="Save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>

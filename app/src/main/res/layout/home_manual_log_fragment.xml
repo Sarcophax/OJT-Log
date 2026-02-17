@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_page_shape"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="26dp"
+            android:textStyle="bold|italic"
+            android:textColor="#FFFFFF"
+            android:text="Manual Log" />
+
+        <Button
+            android:id="@+id/button_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_circle_close_button"
+            app:backgroundTint="@null"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/home_manual_log_TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_selector_background"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="#80FFFFFF"
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MANUAL" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABSENT" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOLIDAY" />
+        </com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightText"
+            android:text="DATE" />
+
+        <EditText
+            android:id="@+id/home_manual_log_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_input_bg"
+            android:autofillHints="MM-dd-yyyy"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="mm/dd/yyyy"
+            android:ems="10"
+            android:padding="20dp"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_time_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="START"
+                        android:textColor="@color/lightText"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/home_manual_log_startTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/rounded_input_bg"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="08:00 AM"
+                        android:inputType="text"
+                        android:padding="20dp"
+                        android:textColor="#FFFFFF"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="END"
+                        android:textColor="@color/lightText"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/home_manual_log_endTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_input_bg"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="6:00 PM"
+                        android:inputType="text"
+                        android:padding="20dp"
+                        android:textColor="#FFFFFF"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/home_manual_log_saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:background="@drawable/quick_log_button"
+            app:backgroundTint="@null"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
+            android:padding="16dp"
+            android:text="Save Log" />
+    </LinearLayout>
+
+</LinearLayout>

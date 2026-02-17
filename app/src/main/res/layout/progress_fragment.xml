@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030617"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/home_page_shape"
+        android:orientation="vertical">
+
+<!--        region Progress-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBarCircle"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:max="500"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/progress_percentageTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/progress_percentageSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/progress_progressPercentageTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COMPLETED"
+                    android:textColor="@color/lightText"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+<!--        endregion-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+<!-- region HourLogged-->
+            <!--            endregion-->
+
+<!--            region HoursLeft-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_page_shape"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:letterSpacing="0.05"
+                    android:text="DAYS LEFT"
+                    android:textColor="@color/lightText"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/progress_daysLeftTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#317af2"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_page_shape"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/lightText"
+                    android:textSize="8dp"
+                    android:textStyle="bold"
+                    android:text="HRS LEFT" />
+
+                <TextView
+                    android:id="@+id/progress_hrsLeftTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/lightText"
+                    android:textSize="32dp"
+                    android:textStyle="bold"
+                    android:text="" />
+            </LinearLayout>
+<!--            endregion-->
+        </LinearLayout>
+
+<!--            region EstimatedDate-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@color/lightText"
+                android:text="ESTIMATED COMPLETION" />
+
+            <TextView
+                android:id="@+id/estimatedDayTxt"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="" />
+        </LinearLayout>
+<!--        endregion-->
+
+    </LinearLayout>
+
+</LinearLayout>

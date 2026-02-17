@@ -16,6 +16,9 @@ captures/
 *.apk
 output-metadata.json
 
+# Firebase API
+app/google-services.json
+
 # IntelliJ
 *.iml
 .idea/

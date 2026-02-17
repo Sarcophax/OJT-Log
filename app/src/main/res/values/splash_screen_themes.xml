@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#f8f8f8</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/main_launcher_icon_second_ojt_log_foreground</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.Ojtlog</item>
+    </style>
+</resources>

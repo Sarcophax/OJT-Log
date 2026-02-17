@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030617"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--        region Log-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo_shape"
+                android:padding="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/topText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:text="Daily Update" />
+
+            <TextView
+                android:id="@+id/bottomText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/lightText"
+                android:text="Log your progress for today" />
+
+            <Button
+                android:id="@+id/home_quickLogBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/quick_log_button"
+                android:padding="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:backgroundTint="@null"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Log Full Day Today" />
+
+            <Button
+                android:id="@+id/home_manualLogBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/manual_log_button"
+                app:backgroundTint="@null"
+                android:text="Manual/Specific Entry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/home_page_shape"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="20dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:text="COMPLETED" />
+
+                <TextView
+                    android:id="@+id/home_completeHrsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:text="0 Hrs" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/home_page_shape"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:text="GOAL" />
+
+                <TextView
+                    android:id="@+id/home_goalHrsTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:layout_weight="2"
+                    android:text="0 Hrs" />
+
+                <TextView
+                    android:id="@+id/home_hrsLeftTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b2b2b2"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:text="0 Hrs left" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--        endregion-->
+
+    <!--        region OtherData-->
+    <!--        endregion-->
+
+
+
+</LinearLayout>
