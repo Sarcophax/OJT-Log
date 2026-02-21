@@ -38,10 +38,9 @@ Select your specific **Working Days** (e.g., Monday to Friday).
 
 ## TECHNICAL STACK
 
-* **Language:** **Kotlin** - A modern, concise programming language for Android development.
-* **Database:** **Firebase** - A cloud-based database that stores your logs securely in real-time.
-* **Authentication:** **Anonymous Login** - This allows you to use the app immediately without creating a username or password.
-* **IDE:** **Android Studio** - The professional environment used to build and design the application interface.
+* **Language:** **Kotlin**
+* **Database:** **Firebase**
+* **IDE:** **Android Studio**
 
 ---
 
